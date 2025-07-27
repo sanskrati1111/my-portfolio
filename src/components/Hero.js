@@ -80,10 +80,10 @@ export default function Hero() {
   “Turning imagination into reality with every line of code.” ✨
 </p>
   <div className="mt-6 flex justify-center gap-4">
-  <a href="https://github.com/sanskrati1111" target="_blank" className="text-white hover:text-indigo-400 transition">
+  <a href="https://github.com/sanskrati1111" target="_blank" rel="noreferrer" className="text-white hover:text-indigo-400 transition">
     <i className="fab fa-github text-2xl"></i>
   </a>
-  <a href="https://www.linkedin.com/in/sanskrati-arya-159947166/" target="_blank" className="text-white hover:text-blue-400 transition">
+  <a href="https://www.linkedin.com/in/sanskrati-arya-159947166/" target="_blank" rel="noreferrer" className="text-white hover:text-blue-400 transition">
     <i className="fab fa-linkedin text-2xl"></i>
   </a>
   <a href="mailto:sanskratiarya14@gmail.com" className="text-white hover:text-pink-400 transition">
