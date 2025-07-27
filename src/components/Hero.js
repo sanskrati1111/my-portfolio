@@ -15,12 +15,14 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden px-6"
-    >
+      className="parallax-bg relative min-h-screen flex items-center justify-center bg-black overflow-hidden px-6 pb-8 sm:pb-0"
+    ><div className="absolute inset-0 bg-black bg-opacity-85 z-0"></div>
+
       {/* Glowing Background Blobs */}
       <div className="absolute -top-40 -left-20 w-[400px] h-[400px] bg-purple-600 opacity-30 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-0 -right-10 w-[300px] h-[300px] bg-indigo-500 opacity-20 rounded-full filter blur-2xl"></div>
       <div className="absolute top-20 right-20 w-[150px] h-[150px] bg-pink-500 opacity-25 rounded-full filter blur-2xl"></div>
+
 
       {/* Hero Content */}
       <motion.div
@@ -59,13 +61,35 @@ export default function Hero() {
           </a>
 
           <a
-            href="/sanskrati-resume.pdf"
+            href="/sanskrati-resume_.pdf"
             download
             className="px-8 py-3 border border-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg shadow hover:shadow-lg transition"
           >
             📄 Download Resume
           </a>
         </div>
+      <br></br>
+<p className="text-gray-300 text-md sm:text-lg ">
+      I'm <span className="text-indigo-300 font-semibold">Sanskrati Arya</span>, a
+      passionate developer who crafts smooth, interactive UIs and loves
+      bringing designs to life with code. I focus on performance, clarity,
+      and creating joyful user experiences. Currently building my portfolio
+      to showcase projects, skills, and growth journey. 
+    </p>
+<p className="mt-6 text-sm sm:text-md text-gray-400 italic max-w-lg mx-auto">
+  “Turning imagination into reality with every line of code.” ✨
+</p>
+  <div className="mt-6 flex justify-center gap-4">
+  <a href="https://github.com/sanskrati1111" target="_blank" className="text-white hover:text-indigo-400 transition">
+    <i className="fab fa-github text-2xl"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/sanskrati-arya-159947166/" target="_blank" className="text-white hover:text-blue-400 transition">
+    <i className="fab fa-linkedin text-2xl"></i>
+  </a>
+  <a href="mailto:sanskratiarya14@gmail.com" className="text-white hover:text-pink-400 transition">
+    <i className="fas fa-envelope text-2xl"></i>
+  </a>
+</div>
       </motion.div>
     </section>
   );

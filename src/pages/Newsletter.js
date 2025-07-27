@@ -1,5 +1,33 @@
-// src/pages/Newsletter.js
+import { useState } from "react";
+
 export default function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("https://5461rbgwih.execute-api.ap-south-1.amazonaws.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        setMessage("✅ Subscribed successfully! 💌");
+        setEmail("");
+      } else {
+        setMessage("❌ Subscription failed. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setMessage("⚠️ Something went wrong. Try again later.");
+    }
+  };
+
   return (
     <section
       id="newsletter"
@@ -18,16 +46,15 @@ export default function Newsletter() {
         </p>
 
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Subscribed! 🚀");
-          }}
+          onSubmit={handleSubmit}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <input
             type="email"
             placeholder="Enter your email"
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full sm:w-2/3 px-5 py-3 rounded-lg bg-gray-900 text-white border-2 border-indigo-600 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
           />
           <button
@@ -37,6 +64,10 @@ export default function Newsletter() {
             Subscribe 💌
           </button>
         </form>
+
+        {message && (
+          <p className="mt-4 text-sm text-pink-400 font-medium">{message}</p>
+        )}
       </div>
     </section>
   );

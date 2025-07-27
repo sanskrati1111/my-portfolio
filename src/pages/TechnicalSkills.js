@@ -5,8 +5,8 @@ const skillData = [
     skills: [
       { name: "JavaScript", icon: "si-javascript", tip: "2+ years experience" },
       { name: "TypeScript", icon: "si-typescript", tip: "1 year" },
-      { name: "Python", icon: "si-python", tip: "Scripting & automation" },
-      { name: "Shell", icon: "si-gnubash", tip: "Bash scripting" },
+      { name: "C++", icon: "si-c++", tip: "Scripting & automation" },
+      { name: "Java", icon: "si-gnubash", tip: "Bash scripting" },
     ],
   },
   {
@@ -33,7 +33,7 @@ const skillData = [
     title: "Databases",
     skills: [
       { name: "MongoDB", icon: "si-mongodb", tip: "NoSQL DB" },
-      { name: "PostgreSQL", icon: "si-postgresql", tip: "Relational DB" },
+      // { name: "PostgreSQL", icon: "si-postgresql", tip: "Relational DB" },
       { name: "MySQL", icon: "si-mysql", tip: "Legacy DB experience" },
     ],
   },
@@ -53,7 +53,7 @@ const skillData = [
     title: "Development Concepts",
     skills: [
       { name: "REST APIs", icon: "si-apache", tip: "API design principles" },
-      { name: "CI/CD", icon: "si-circleci", tip: "Automation pipelines" },
+      // { name: "CI/CD", icon: "si-circleci", tip: "Automation pipelines" },
       { name: "OAuth", icon: "si-oauth", tip: "Token-based auth" },
       { name: "Microservices", icon: "si-docker", tip: "Service architecture" },
       { name: "Cloud Hosting", icon: "si-googlecloud", tip: "SaaS deployment" },
@@ -64,7 +64,7 @@ const skillData = [
 export default function TechnicalSkills() {
   return (
     <section
-      id="skills"
+      id="TechnicalSkills"
       className="relative bg-black text-white px-6 py-24 flex justify-center"
     >
       <div className="absolute top-10 left-10 w-40 h-40 bg-indigo-500 opacity-10 blur-3xl rounded-full"></div>

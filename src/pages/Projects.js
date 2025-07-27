@@ -6,36 +6,30 @@ export default function Projects() {
       tech: "Next.js, Tailwind CSS, NextAuth, Spotify API, Recoil, TypeScript",
       description:
         "Built a full-featured Spotify clone using Spotify APIs, authentication with NextAuth, state management with Recoil, and styled with Tailwind. Deployed on Vercel.",
-      link: "https://your-spotify-clone-link.com", // Replace with your real link
+      link: "https://spotifyclone1111.vercel.app/login", 
     },
     {
       title: "Chat Application 💬",
       tech: "React.js, Firebase, Chat Engine",
       description:
         "Created a real-time chat app with Google & Facebook authentication, image support, room creation, and live notifications using React and Firebase.",
-      link: "https://your-chatapp-link.com", // Replace with your real link
+      link: "https://mychattapp.netlify.app/chats", // Replace with your real link
     },
     {
       title: "TexScribe – Video to Text 🔊",
       tech: "Python, IBM Watson, ffmpeg",
       description:
         "Developed a tool that converts video into audio and transcribes it using IBM Watson’s speech-to-text API. Automates the pipeline using Python.",
-      link: "https://your-texscribe-link.com", // Replace with your real link
-    },
-    {
-      title: "Digital Transformation Dashboard 📊",
-      tech: "Jira Align, Miro, Figma",
-      description:
-        "Contributed to internal project dashboards integrating Miro boards, Jira Align sprints, and automated reporting for transformation teams.",
-      link: "#", // Internal project, so no external link
+     
     },
   ];
 
   return (
     <section
       id="projects"
-      className="relative bg-black text-white px-6 py-24 flex justify-center"
-    >
+      className="parallax-bg relative bg-black text-white px-6 py-24 flex justify-center"
+    >     <div className="absolute inset-0 bg-black bg-opacity-35 z-0"></div>
+
       {/* Background blobs */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-indigo-600 opacity-10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-56 h-56 bg-pink-600 opacity-10 rounded-full blur-2xl"></div>
