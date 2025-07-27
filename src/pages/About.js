@@ -1,5 +1,5 @@
 // src/pages/About.js
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function About() {
